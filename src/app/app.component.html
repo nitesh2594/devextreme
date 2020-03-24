@@ -1,0 +1,14 @@
+<dx-data-grid 
+    id="gridContainer"
+    [dataSource]="dataSource"
+    [customizeColumns]="customizeColumns"
+    [showBorders]="true"
+    (onContentReady)="onContentReady($event)">
+ 
+    <dxo-scrolling mode="virtual"></dxo-scrolling>
+    <dxo-sorting mode="virtual"></dxo-sorting>
+     <dxo-search-panel [visible]="true"></dxo-search-panel>
+    <dxo-paging [pageSize]="10"></dxo-paging>
+    <dxo-group-panel [visible]="true"></dxo-group-panel>
+    <dxo-grouping #expand [autoExpandAll]="true"></dxo-grouping>
+</dx-data-grid>
